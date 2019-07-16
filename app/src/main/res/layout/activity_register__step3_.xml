@@ -4,8 +4,8 @@
     <data>
 
         <variable
-            name="RegisterStep1"
-            type="com.example.databinding.model.RegisterStep1" />
+            name="RegisterStep3"
+            type="com.example.databinding.model.RegisterStep3" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
 
         android:gravity="center_horizontal"
-        tools:context=".Register_Step1_Activity">
+        tools:context=".Register_Step2_Activity">
 
         <ImageView
             android:id="@+id/imageView"
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="@{RegisterStep1.title}"
+            android:text="@{RegisterStep3.title}"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="24dp"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:paddingHorizontal="60dp"
-            android:text="@{RegisterStep1.descreption}"
+            android:text="@{RegisterStep3.descreption}"
             android:textAlignment="center"
             android:textColor="@color/colorTextGray"
             android:textSize="16dp"
@@ -69,8 +69,8 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/button_orange"
-            android:onClick="register"
-            android:text="@{RegisterStep1.creat}"
+            android:onClick="register3"
+            android:text="@{RegisterStep3.creat}"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18dp"
@@ -91,7 +91,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/botton_white"
-            android:text="@{RegisterStep1.login}"
+            android:text="@{RegisterStep3.login}"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="18dp"
