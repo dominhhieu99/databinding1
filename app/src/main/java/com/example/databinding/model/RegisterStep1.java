@@ -1,45 +1,45 @@
 package com.example.databinding.model;
 
 public class RegisterStep1 {
-    private String title, descreption, creat, login;
+    private String step, registration, conten, continue1;
 
-    public RegisterStep1(String title, String descreption, String creat, String login) {
-        this.title = title;
-        this.descreption = descreption;
-        this.creat = creat;
-        this.login = login;
+    public String getStep() {
+        return step;
     }
 
-    public String getTitle() {
-        return title;
+    public void setStep(String step) {
+        this.step = step;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public String getRegistration() {
+        return registration;
     }
 
-    public String getDescreption() {
-        return descreption;
+    public void setRegistration(String registration) {
+        this.registration = registration;
     }
 
-    public void setDescreption(String descreption) {
-        this.descreption = descreption;
+    public String getConten() {
+        return conten;
     }
 
-    public String getCreat() {
-        return creat;
+    public void setConten(String conten) {
+        this.conten = conten;
     }
 
-    public void setCreat(String creat) {
-        this.creat = creat;
+    public String getContinue1() {
+        return continue1;
     }
 
-    public String getLogin() {
-        return login;
+    public void setContinue1(String continue1) {
+        this.continue1 = continue1;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public RegisterStep1(String step, String registration, String conten, String continue1) {
+        this.step = step;
+        this.registration = registration;
+        this.conten = conten;
+        this.continue1 = continue1;
     }
 }
 

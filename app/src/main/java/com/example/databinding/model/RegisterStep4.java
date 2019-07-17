@@ -1,13 +1,14 @@
 package com.example.databinding.model;
 
 public class RegisterStep4 {
-    private String title, descreption, creat, login;
+    private String step, title, conten, continue4;
 
-    public RegisterStep4(String title, String descreption, String creat, String login) {
-        this.title = title;
-        this.descreption = descreption;
-        this.creat = creat;
-        this.login = login;
+    public String getStep() {
+        return step;
+    }
+
+    public void setStep(String step) {
+        this.step = step;
     }
 
     public String getTitle() {
@@ -18,28 +19,27 @@ public class RegisterStep4 {
         this.title = title;
     }
 
-    public String getDescreption() {
-        return descreption;
+    public String getConten() {
+        return conten;
     }
 
-    public void setDescreption(String descreption) {
-        this.descreption = descreption;
+    public void setConten(String conten) {
+        this.conten = conten;
     }
 
-    public String getCreat() {
-        return creat;
+    public String getContinue4() {
+        return continue4;
     }
 
-    public void setCreat(String creat) {
-        this.creat = creat;
+    public void setContinue4(String continue4) {
+        this.continue4 = continue4;
     }
 
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
+    public RegisterStep4(String step, String title, String conten, String continue4) {
+        this.step = step;
+        this.title = title;
+        this.conten = conten;
+        this.continue4 = continue4;
     }
 }
 

@@ -22,11 +22,16 @@ public class Register_Step4_Activity extends AppCompatActivity {
         //   setContentView(R.layout.activity_register__step3_);
         Toast.makeText(this, "Register4", Toast.LENGTH_SHORT).show();
         ActivityRegisterStep4Binding binding = DataBindingUtil.setContentView(this, R.layout.activity_register__step4_);
-        registerStep4 = new RegisterStep4("Let's get started", "Never a better time than now to start thinking about how are manage all your finances whithease", "Creat Acount", "Log in");
+        registerStep4 = new RegisterStep4("Step 4/4", "One step away to your account", "Now we need to verify your identity", "Continue");
         binding.setRegisterStep4(registerStep4);
     }
 
     public void register4(View view) {
+        Intent intent = new Intent(Register_Step4_Activity.this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void back4(View view) {
         Intent intent = new Intent(Register_Step4_Activity.this, Register_Step3_Activity.class);
         startActivity(intent);
     }

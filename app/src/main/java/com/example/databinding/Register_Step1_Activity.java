@@ -14,22 +14,24 @@ import com.example.databinding.model.RegisterStep1;
 import com.example.databinding.model.Wellcome;
 
 public class Register_Step1_Activity extends AppCompatActivity {
-    private Wellcome welcome;
     private RegisterStep1 registerStep1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_welcome);
-
         ActivityRegisterStep1Binding binding = DataBindingUtil.setContentView(this, R.layout.activity_register__step1_);
-        registerStep1 = new RegisterStep1("Let's get started", "Never a better time than now to start thinking about how are manage all your finances whithease", "Creat Acount", "Log in");
+        registerStep1 = new RegisterStep1("Step 1/4", "Registration", "Enter your number, we will send you OTP to verify later", "Continue");
         binding.setRegisterStep1(registerStep1);
         Toast.makeText(this, "Register1", Toast.LENGTH_SHORT).show();
     }
 
-    public void register(View view) {
+    public void register1(View view) {
         Intent intent = new Intent(Register_Step1_Activity.this, Register_Step2_Activity.class);
+        startActivity(intent);
+    }
+
+    public void back1(View view) {
+        Intent intent = new Intent(Register_Step1_Activity.this, MainActivity.class);
         startActivity(intent);
     }
 }

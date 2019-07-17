@@ -20,13 +20,17 @@ public class Register_Step2_Activity extends AppCompatActivity {
         //setContentView(R.layout.activity_register__step2_);
         Toast.makeText(this, "Register2", Toast.LENGTH_SHORT).show();
         ActivityRegisterStep2Binding binding = DataBindingUtil.setContentView(this, R.layout.activity_register__step2_);
-        registerStep2 = new RegisterStep2("Let's get started", "Never a better time than now to start thinking about how are manage all your finances whithease", "Creat Acount", "Log in");
+        registerStep2 = new RegisterStep2("Step 2/4", "Verification", "Enter 4 digit number that sent to phone number.", "Continue");
         binding.setRegisterStep2(registerStep2);
-
     }
 
     public void register2(View view) {
         Intent intent = new Intent(Register_Step2_Activity.this, Register_Step3_Activity.class);
+        startActivity(intent);
+    }
+
+    public void back2(View view) {
+        Intent intent = new Intent(Register_Step2_Activity.this, Register_Step1_Activity.class);
         startActivity(intent);
     }
 }
