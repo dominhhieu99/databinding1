@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
 
         android:gravity="center_horizontal"
-        tools:context=".Register_Step1_Activity">
+        tools:context=".UI.RegisterStep1Activity">
 
         <ImageView
             android:id="@+id/imageView"
@@ -71,7 +71,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="28dp"
             android:background="@drawable/button_orange"
-            android:onClick="register4"
+            android:onClick="onContinueClickListener4"
             android:text="@{RegisterStep4.continue4}"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -103,7 +103,7 @@
             android:layout_marginStart="48dp"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="44dp"
-            android:onClick="back4"
+            android:onClick="onBackClickListener4"
             android:text="Back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

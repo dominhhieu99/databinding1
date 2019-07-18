@@ -1,4 +1,4 @@
-package com.example.databinding;
+package com.example.databinding.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.databinding.R;
 import com.example.databinding.databinding.ActivityMainBinding;
 import com.example.databinding.model.Wellcome;
 
@@ -24,7 +25,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void register(View view) {
-        Intent intent = new Intent(MainActivity.this, Register_Step1_Activity.class);
+        Intent intent = new Intent(MainActivity.this, RegisterStep1Activity.class);
+        startActivity(intent);
+    }
+
+    public void loign(View view) {
+        Intent intent = new Intent(MainActivity.this, Home1Activity.class);
         startActivity(intent);
     }
 }

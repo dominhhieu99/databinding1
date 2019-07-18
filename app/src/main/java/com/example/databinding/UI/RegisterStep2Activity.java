@@ -1,4 +1,4 @@
-package com.example.databinding;
+package com.example.databinding.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -8,12 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.databinding.R;
 import com.example.databinding.databinding.ActivityRegisterStep2Binding;
 import com.example.databinding.model.RegisterStep2;
 
-public class Register_Step2_Activity extends AppCompatActivity {
-    private RegisterStep2 registerStep2;
 
+public class RegisterStep2Activity extends AppCompatActivity {
+    private RegisterStep2 registerStep2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,13 +25,13 @@ public class Register_Step2_Activity extends AppCompatActivity {
         binding.setRegisterStep2(registerStep2);
     }
 
-    public void register2(View view) {
-        Intent intent = new Intent(Register_Step2_Activity.this, Register_Step3_Activity.class);
+    public void onContinueClickListener2(View view) {
+        Intent intent = new Intent(RegisterStep2Activity.this, RegisterStep3Activity.class);
         startActivity(intent);
     }
 
-    public void back2(View view) {
-        Intent intent = new Intent(Register_Step2_Activity.this, Register_Step1_Activity.class);
+    public void onBackClickListener2(View view) {
+        Intent intent = new Intent(RegisterStep2Activity.this, RegisterStep1Activity.class);
         startActivity(intent);
     }
 }

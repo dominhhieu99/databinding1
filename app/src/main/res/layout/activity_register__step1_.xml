@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
 
         android:gravity="center_horizontal"
-        tools:context=".Register_Step1_Activity">
+        tools:context=".UI.RegisterStep1Activity">
 
         <ImageView
             android:id="@+id/imageView"
@@ -71,7 +71,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="28dp"
             android:background="@drawable/button_orange"
-            android:onClick="register1"
+            android:onClick="onContinueClick1"
             android:text="@{RegisterStep1.continue1}"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -103,7 +103,7 @@
             android:layout_marginStart="48dp"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="44dp"
-            android:onClick="back1"
+            android:onClick="onBackClickListener1"
             android:text="Back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

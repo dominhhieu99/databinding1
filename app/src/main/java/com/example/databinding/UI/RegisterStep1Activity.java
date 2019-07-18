@@ -1,4 +1,4 @@
-package com.example.databinding;
+package com.example.databinding.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -8,12 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.databinding.databinding.ActivityMainBinding;
+import com.example.databinding.R;
 import com.example.databinding.databinding.ActivityRegisterStep1Binding;
 import com.example.databinding.model.RegisterStep1;
-import com.example.databinding.model.Wellcome;
 
-public class Register_Step1_Activity extends AppCompatActivity {
+public class RegisterStep1Activity extends AppCompatActivity {
     private RegisterStep1 registerStep1;
 
     @Override
@@ -25,13 +24,13 @@ public class Register_Step1_Activity extends AppCompatActivity {
         Toast.makeText(this, "Register1", Toast.LENGTH_SHORT).show();
     }
 
-    public void register1(View view) {
-        Intent intent = new Intent(Register_Step1_Activity.this, Register_Step2_Activity.class);
+    public void onContinueClick1(View view) {
+        Intent intent = new Intent(RegisterStep1Activity.this, RegisterStep2Activity.class);
         startActivity(intent);
     }
 
-    public void back1(View view) {
-        Intent intent = new Intent(Register_Step1_Activity.this, MainActivity.class);
+    public void onBackClickListener1 (View view) {
+        Intent intent = new Intent(RegisterStep1Activity.this, MainActivity.class);
         startActivity(intent);
     }
 }

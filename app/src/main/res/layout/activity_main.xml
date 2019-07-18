@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
 
         android:gravity="center_horizontal"
-        tools:context=".MainActivity">
+        tools:context=".UI.MainActivity">
 
         <ImageView
             android:id="@+id/imageView"
@@ -91,6 +91,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/botton_white"
+            android:onClick="loign"
             android:text="@{welcome.login}"
             android:textAllCaps="false"
             android:textColor="@color/black"

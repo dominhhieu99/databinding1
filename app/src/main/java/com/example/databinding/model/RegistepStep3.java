@@ -1,6 +1,6 @@
 package com.example.databinding.model;
 
-public class RegisterStep3 {
+public class RegistepStep3 {
     private String step, fingerprint, conten, continue3;
 
     public String getStep() {
@@ -35,7 +35,7 @@ public class RegisterStep3 {
         this.continue3 = continue3;
     }
 
-    public RegisterStep3(String step, String fingerprint, String conten, String continue3) {
+    public RegistepStep3(String step, String fingerprint, String conten, String continue3) {
         this.step = step;
         this.fingerprint = fingerprint;
         this.conten = conten;
