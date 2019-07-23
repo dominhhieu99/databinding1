@@ -209,7 +209,7 @@
     <LinearLayout
         android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@android:dimen/thumbnail_width"
         android:orientation="horizontal"
         android:paddingTop="110dp">
@@ -367,4 +367,5 @@
 
 
     </LinearLayout>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
