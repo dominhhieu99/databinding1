@@ -1,5 +1,6 @@
 package com.example.databinding.UI;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
@@ -111,5 +112,10 @@ public class Home1Activity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void onClickSendGift(View view) {
+        Intent intent = new Intent(Home1Activity.this, GiftActivity.class);
+        startActivity(intent);
     }
 }

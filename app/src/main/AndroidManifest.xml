@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--<activity android:name=".UI.GiftActivity"></activity>-->
+        <activity android:name=".UI.InsightActivity"></activity>
+        <activity android:name=".UI.GiftActivity" />
         <activity android:name=".UI.SendGiftActivity" />
         <activity
             android:name=".UI.Home1Activity"
@@ -19,7 +20,7 @@
         <activity android:name=".UI.RegisterStep3Activity" />
         <activity android:name=".UI.RegisterStep2Activity" />
         <activity android:name=".UI.RegisterStep1Activity" />
-        <activity android:name=".UI.GiftActivity">
+        <activity android:name=".UI.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
