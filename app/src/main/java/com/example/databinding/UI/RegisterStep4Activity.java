@@ -86,7 +86,7 @@ public class RegisterStep4Activity extends AppCompatActivity {
             }
             // đóng brogressbar.
             progressBar.dismiss();
-            Intent intent = new Intent(RegisterStep4Activity.this, Home1Activity.class);
+            Intent intent = new Intent(RegisterStep4Activity.this, HomeActivity.class);
             startActivity(intent);
         }
     }

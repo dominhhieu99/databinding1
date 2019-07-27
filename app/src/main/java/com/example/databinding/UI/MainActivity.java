@@ -29,8 +29,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void loign(View view) {
-        Intent intent = new Intent(MainActivity.this, Home1Activity.class);
-        startActivity(intent);
-    }
 }

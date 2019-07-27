@@ -70,8 +70,6 @@ public class SendGiftActivity extends AppCompatActivity {
             }
             // đóng brogressbar.
             progressBar.dismiss();
-            Intent intent = new Intent(SendGiftActivity.this, InsightActivity.class);
-            startActivity(intent);
         }
     }
 }

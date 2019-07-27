@@ -8,18 +8,41 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <include
-        layout="@layout/app_bar_home1"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_home1"
-        app:menu="@menu/activity_home1_drawer" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/register_step2"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="?attr/actionBarSize" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!--<com.google.android.material.navigation.NavigationView-->
+        <!--android:id="@+id/nav_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--app:headerLayout="@layout/nav_header_home1"-->
+        <!--app:menu="@menu/activity_home1_drawer" />-->
 
 </androidx.drawerlayout.widget.DrawerLayout>
