@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.example.databinding.R;
-import com.example.databinding.UI.GiftActivity;
+import com.example.databinding.ui.GiftActivity;
 
 public class MyWalletFragment extends Fragment {
     LinearLayout linearLayout;

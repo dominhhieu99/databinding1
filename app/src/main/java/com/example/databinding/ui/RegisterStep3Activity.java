@@ -1,4 +1,4 @@
-package com.example.databinding.UI;
+package com.example.databinding.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;

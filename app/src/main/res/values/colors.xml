@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorBackgroundEnd">#fdfdfd</color>
     <color name="colorBackgroundStart">#cfced3</color>
-    <color
-
-
-        name="colorButtonOrange">#fe9c43</color>
+    <color name="colorButtonOrange">#fe9c43</color>
     <color name="white">#ffffff</color>
     <color name="colorButtonOrangeClick">#FF5555</color>
     <color name="colorButtonWhiteClick">#f4f4f4</color>
     <color name="black">#000000</color>
     <color name="colorTextGray">#86858b</color>
     <color name="orange">#f5691c</color>
+    <color name="colorButtonYellow">#f8cf1d</color>
+    <color name="colorButtonYellowClick">#fde167</color>
+    <color name="colorButtonGray">#f8f8fa</color>
+    <color name="colorButtonGrayClick">#e3e3e5</color>
+    <color name="colorButtonBlue">#5cadff</color>
+    <color name="colorButtonPink">#ff6581</color>
+    <color name="background_char_investment">#fdf3e3</color>
 </resources>
 

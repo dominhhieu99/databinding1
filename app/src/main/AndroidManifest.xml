@@ -10,17 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!--<activity android:name=".UI.HomeActivity"></activity>-->
-        <activity android:name=".UI.GiftActivity" />
-        <activity android:name=".UI.SendGiftActivity" />
+        <activity android:name=".ui.GiftActivity" />
+        <activity android:name=".ui.SendGiftActivity" />
         <!--<activity-->
             <!--android:name=".UI.Home1Activity"-->
             <!--android:label="@string/title_activity_home1"-->
             <!--android:theme="@style/AppTheme.NoActionBar" />-->
-        <activity android:name=".UI.RegisterStep4Activity" />
-        <activity android:name=".UI.RegisterStep3Activity" />
-        <activity android:name=".UI.RegisterStep2Activity" />
-        <activity android:name=".UI.RegisterStep1Activity" />
-        <activity android:name=".UI.HomeActivity">
+        <activity android:name=".ui.RegisterStep4Activity" />
+        <!--<activity android:name=".UI.CharityActivity" />-->
+        <!--<activity android:name=".ui.InsuranceActivity" />-->
+        <activity android:name=".ui.RegisterStep3Activity" />
+        <!--<activity android:name=".ui.LoanActivity" />-->
+        <activity android:name=".ui.RegisterStep2Activity" />
+        <activity android:name=".ui.InvestmentActivity" />
+        <activity android:name=".ui.RegisterStep1Activity" />
+        <activity android:name=".ui.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

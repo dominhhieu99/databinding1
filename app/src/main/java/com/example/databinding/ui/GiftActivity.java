@@ -1,52 +1,60 @@
-package com.example.databinding.UI;
+package com.example.databinding.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
+import com.example.databinding.GiftAdapter;
 import com.example.databinding.R;
-import com.example.databinding.databinding.ActivityRegisterStep4Binding;
-import com.example.databinding.model.RegisterStep4;
+import com.example.databinding.model.Gift;
 
-public class RegisterStep4Activity extends AppCompatActivity {
-    private RegisterStep4 registerStep4;
+import java.util.ArrayList;
+import java.util.List;
 
-    private Dialog dialog;
+public class GiftActivity extends AppCompatActivity {
+    RecyclerView rvList;
+    List<Gift> giftList;
+    GiftAdapter adapter;
     ProgressDialog progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //   setContentView(R.layout.activity_register__step3_);
-        Toast.makeText(this, "Register4", Toast.LENGTH_SHORT).show();
-        ActivityRegisterStep4Binding binding = DataBindingUtil.setContentView(this, R.layout.activity_register__step4_);
-        registerStep4 = new RegisterStep4("Step 4/4", "One step away to your account", "Now we need to verify your identity", "Continue");
-        binding.setRegisterStep4(registerStep4);
+        setContentView(R.layout.activity_gift);
+        rvList = findViewById(R.id.rvList);
+        giftList = new ArrayList<>();
+        adapter = new GiftAdapter(giftList);
+        rvList.setAdapter(adapter);
+        RecyclerView.LayoutManager manager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        rvList.setLayoutManager(manager);
+
+        fakeData();
     }
 
-    public void onContinueClickListener4(View view) {
-        showDialog();
+    private void fakeData() {
+        giftList.add(new Gift(R.drawable.home7a, "abc"));
+        giftList.add(new Gift(R.drawable.home7d, "abc"));
+        giftList.add(new Gift(R.drawable.home7c, "abc"));
+        giftList.add(new Gift(R.drawable.home7d, "abc"));
+        giftList.add(new Gift(R.drawable.e_shopping, "abc"));
+        giftList.add(new Gift(R.drawable.cash_black, "abc"));
+        giftList.add(new Gift(R.drawable.send_gift, "abc"));
+        giftList.add(new Gift(R.drawable.home7a, "abc"));
+        giftList.add(new Gift(R.drawable.home7d, "abc"));
+        giftList.add(new Gift(R.drawable.home7c, "abc"));
+        giftList.add(new Gift(R.drawable.home7d, "abc"));
+        giftList.add(new Gift(R.drawable.e_shopping, "abc"));
+        giftList.add(new Gift(R.drawable.cash_black, "abc"));
+        giftList.add(new Gift(R.drawable.send_gift, "abc"));
     }
 
-    public void onBackClickListener4(View view) {
-        Intent intent = new Intent(RegisterStep4Activity.this, RegisterStep3Activity.class);
-        startActivity(intent);
-    }
-
-    public void showDialog() {
-        dialog = new Dialog(RegisterStep4Activity.this);
-        dialog.setContentView(R.layout.dialog_register_step5);
-        dialog.show();
-    }
-
-    public void Continuea(View view) {
-        progressBar = new ProgressDialog(RegisterStep4Activity.this);
+    public void btnOnclikSendgift(View view) {
+        progressBar = new ProgressDialog(GiftActivity.this);
         // Cho phép hủy progressBar nếu ấn nút Back
         progressBar.setCancelable(true);
         // Đặt tiêu đề cho ProgressBar
@@ -61,10 +69,8 @@ public class RegisterStep4Activity extends AppCompatActivity {
         progressBar.setMax(100);
         // Hiện ProgressBar
         progressBar.show();
-
         // Tạo một luồng xử lý công việc.
         new MyThread().start();
-
     }
 
     class MyThread extends Thread {
@@ -75,18 +81,17 @@ public class RegisterStep4Activity extends AppCompatActivity {
             for (int i = 0; i < 10; i++) {
                 // Tạm dừng 1s, thực tế thì chỗ này là xử lý công việc
                 try {
-                    Thread.sleep(300);
+                    Thread.sleep(100);
                 } catch (InterruptedException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-
                 // tính xem công việc đã hoàn thành bao nhiêu phần trăm và đưa lên progressbar
                 progressBar.setProgress((i * 100) / 10);
             }
             // đóng brogressbar.
             progressBar.dismiss();
-            Intent intent = new Intent(RegisterStep4Activity.this, HomeActivity.class);
+            Intent intent = new Intent(GiftActivity.this, SendGiftActivity.class);
             startActivity(intent);
         }
     }

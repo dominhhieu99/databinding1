@@ -1,4 +1,4 @@
-package com.example.databinding.UI;
+package com.example.databinding.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.example.databinding.R;
 
@@ -70,6 +69,8 @@ public class SendGiftActivity extends AppCompatActivity {
             }
             // đóng brogressbar.
             progressBar.dismiss();
+            Intent intent = new Intent(SendGiftActivity.this, HomeActivity.class);
+            startActivity(intent);
         }
     }
 }

@@ -21,4 +21,40 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="overview_total_loan">Total Loan</string>
+    <string name="overview_total_rp">Rp 6.000.000</string>
+    <string name="overview_eaened">Earned</string>
+    <string name="overview_eaened_rp">Rp 5.800.000</string>
+    <string name="overview_good_balance">Good Balance</string>
+    <string name="overview_good_balance_des">Your earned is more than spent</string>
+    <string name="overview_spend">Spend</string>
+    <string name="overview_spend_rp">Rp 2.000.000</string>
+    <string name="overview_top_spending">Top Spending</string>
+    <string name="overview_rent">Rent</string>
+    <string name="overview_utility">Utility</string>
+    <string name="overview_transport">Transport</string>
+    <string name="overview_food">Food</string>
+    <string name="overview_good_utility_des">You spent 30% more than last month</string>
+    <string name="overview_monthly_bubget">Monthly Bubget</string>
+    <string name="overview_transportation">Transportation</string>
+    <string name="overview_rp_day">Rp 15.000/day</string>
+    <string name="overview_transport_rp">Rp 500.000</string>
+    <string name="overview_transport_rp2">Rp 1.000.000</string>
+    <string name="overview_good_transportation_des">You are almost exceedeing your budget</string>
+
+    <string name="overview_investment_total_port">Total Portfolio</string>
+    <string name="overview_investment_total_rp">Rp 6.000.000</string>
+    <string name="overview_investment_day">Day</string>
+    <string name="overview_investment_week">Week</string>
+    <string name="overview_investment_month">Month</string>
+    <string name="overview_investment_year">Year</string>
+    <string name="overview_investment">Investment</string>
+    <string name="overview_investment_des">Your investment plan is on track</string>
+    <string name="overview_investment_my_portfolio">My Portfolio</string>
+    <string name="overview_investment_portfolio_name">ANTM</string>
+    <string name="overview_investment_portfolio_money">920.000</string>
+    <string name="overview_investment_portfolio_share">100 shares</string>
+    <string name="overview_investment_portfolio_percent">4.62%</string>
 </resources>
